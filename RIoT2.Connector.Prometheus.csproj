@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <IncludeSymbols>False</IncludeSymbols>
+    <IsPublishable>true</IsPublishable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- The connector SDK (design 7.3); it brings Contracts, Mqtt, Http and Hosting, not the device SDK or Quartz. -->
+    <PackageReference Include="RIoT2.Connector.Sdk" />
+  </ItemGroup>
+
+</Project>
