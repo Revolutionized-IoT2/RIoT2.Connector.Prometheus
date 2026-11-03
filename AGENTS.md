@@ -71,7 +71,7 @@ dotnet run --project .\RIoT2.Connector.Prometheus\RIoT2.Connector.Prometheus.csp
   the SDK's `EntityFlattener`, shared with the InfluxDB connector.
 - Keep the spool off: Prometheus pulls the latest value, so a backlog has no use.
 - Map each message on its own; a message that can't be mapped is counted `ignored`, not thrown.
-- Reference Core only through `RIoT2.Connector.Sdk` (`1.22.0`, set in `Directory.Packages.props`).
+- Reference Core only through `RIoT2.Connector.Sdk` (`2.0.0`, set in `Directory.Packages.props`).
   Keep `PackageReference` items versionless.
 - Don't add a Prometheus client library: the format is small and pinned by the golden test.
 

@@ -4,7 +4,7 @@ Prometheus exporter for the [RIoT2](https://github.com/Revolutionized-IoT2) plat
 RIoT2 MQTT reports (and optionally commands), resolves template metadata from the orchestrator, and
 serves the latest value of each one at `/metrics` for Prometheus and Grafana. It is the second
 connector on the [connector SDK](https://github.com/Revolutionized-IoT2/RIoT2.Core/blob/main/Connector/README.md)
-(Core 1.22.0, [design 7.3](https://github.com/Revolutionized-IoT2/.github/blob/main/docs/design/connector-sdk.md)).
+(Core 2.0.0, [design 7.3](https://github.com/Revolutionized-IoT2/.github/blob/main/docs/design/connector-sdk.md)).
 
 - Type: ASP.NET Core service
 - Target framework: .NET 10
@@ -85,7 +85,7 @@ Then add `<host>:8080` as a scrape target. The image runs as the non-root `app` 
 - Release notes are in [CHANGELOG.md](CHANGELOG.md).
 - To release, push a tag `x.y.z` on `main`. The release workflow validates, then publishes the
   Docker image to GitHub Container Registry ([CI guide](https://github.com/Revolutionized-IoT2/.github/blob/main/docs/guides/ci.md)).
-- This repository references `RIoT2.Connector.Sdk` `1.22.0` from GitHub Packages.
+- This repository references `RIoT2.Connector.Sdk` `2.0.0` from GitHub Packages.
 
 ## Contributing
 
